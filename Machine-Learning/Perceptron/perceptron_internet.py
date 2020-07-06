@@ -17,7 +17,7 @@ from sklearn.model_selection import train_test_split
 # plt.scatter(X[:, 0], X[:, 1], marker='o', c=y, alpha=0.5, edgecolor='c')
 # plt.show()
 
-path = 'C:/Users/Shacosky/Desktop/Phyton/Machine Learning/perceptron_data_2018310.csv'
+path = '..\\Machine-Learning\\Perceptron\\Csv_data\\perceptron_data_2018310.csv'
 df = pd.read_csv(path, sep=';')
 print('_'*60 + 'COLUMNS')
 print(df.columns.values)

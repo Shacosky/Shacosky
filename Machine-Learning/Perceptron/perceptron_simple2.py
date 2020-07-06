@@ -28,7 +28,7 @@ def entrenar(theta, fac_ap, w1, w2,w3,w4, epochs,X, d, n_muestras):
             if z != d[i]:
                 errores = True
                 #caclular error
-                error = (d[i] - z) * theta
+                error = (d[i] - z) 
                 lista_errores.append(error)
                 #ajustar theta
                 theta = theta + (-(fac_ap * error))
@@ -37,7 +37,6 @@ def entrenar(theta, fac_ap, w1, w2,w3,w4, epochs,X, d, n_muestras):
                 w2 = w2 + (X[i][1] * error * fac_ap)
                 w3 = w3 + (X[i][2] * error * fac_ap)
                 w4 = w4 + (X[i][3] * error * fac_ap)
-                epochs +=1
             else:
                 lista_errores.append(0)        
 

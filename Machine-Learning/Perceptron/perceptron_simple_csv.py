@@ -32,8 +32,7 @@ class Perceptron(object):
                 
 
 if __name__ == "__main__":
-    path = 'C:/Users/Shacosky/Desktop/Phyton/Machine Learning/Csv_data/'
-    df = pd.read_csv(path + 'letters2.csv')
+    df = pd.read_csv('..\\Machine-Learning\\Perceptron\\Csv_data\\letters2.csv')
     count_classes = pd.value_counts(df['Clase'], sort = True)
     count_classes.plot(kind = 'bar', rot = 0)
     df.head(n=5)

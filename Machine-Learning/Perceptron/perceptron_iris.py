@@ -70,7 +70,7 @@ class Perceptron:
 
 
 # Cargamos el dataset
-df = pd.read_csv("C:/Users/Shacosky/Desktop/Phyton/Machine Learning/iris.data", header=None)
+df = pd.read_csv("..\\Machine-Learning\\Perceptron\\Csv_data\\iris.data", header=None)
 
 # extraemos el largo sepal y el largo del pétalo en las columnas 0 y 2. Usaremos solo Setosa y Versicolor
 X = df.iloc[0:100, [0, 2]].values
@@ -90,6 +90,7 @@ plt.plot(range(1, len(ppn.errors_) + 1), ppn.errors_, marker='o')
 plt.xlabel('Epochs')
 plt.ylabel('Número de actualizaciones')
 
+print(ppn.errors_)
 
 
 print("Theta: " + str(ppn.w_[0])) 
